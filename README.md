@@ -1,4 +1,4 @@
-# Micro SaaS Project
+# Ai Assistant 🤖
 
 ## Overview
 
@@ -24,5 +24,10 @@ This project provide data insights and user authentication services. The backend
 - **AI Integration:** NLP service for processing text inputs and extracting data insights.
 - **Microservice Architecture:** Isolated services for authentication, business data, and AI processing, managed with Docker.
 
-## Project Structure
+## Technologies Used
 
+- Frontend: Next.js, Material UI
+- Backend: Strapi, PostgreSQL
+- AI/NLP: Hugging Face Transformers, Python
+- Containerization: Docker, Docker Compose
+- Authentication: NextAuth.js
