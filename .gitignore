@@ -1,0 +1,86 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build directories
+dist/
+build/
+.cache/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Database and backend data
+/backend/database/auth-db-data/
+backend/database/business-db-data/
+
+# Docker specific
+docker-compose.override.yml
+docker-compose.yml.override
+*.env
+.dockerignore
+Dockerfile
+Dockerfile.*
+
+# Ignore Docker volumes and container data
+**/docker-volumes/
+**/docker-data/
+**/docker-logs/
+
+# macOS
+.DS_Store
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Python compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Other potentially unwanted files
+*.bak
+*.tmp
+*.temp
+~$*
+
+# Ignore Docker Compose data directories
+**/data/
+**/db-data/
+
+# Miscellaneous
+*.bak
+*.swp
+*~
+*.tmp
+*.temp
+~$*
+
+# Git specific
+.git/
+git status
