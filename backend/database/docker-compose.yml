@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  auth-db:
+    image: postgres:14
+    container_name: auth-db
+    environment:
+      POSTGRES_USER: auth_user
+      POSTGRES_PASSWORD: auth_password
+      POSTGRES_DB: auth_db
+    volumes:
+      - ./auth-db/init-scripts:/docker-entrypoint-initdb.d
+      - auth-db-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  business-db:
+    image: postgres:14
+    container_name: business-db
+    environment:
+      POSTGRES_USER: business_user
+      POSTGRES_PASSWORD: business_password
+      POSTGRES_DB: business_db
+    volumes:
+      - ./business-db/init-scripts:/docker-entrypoint-initdb.d
+      - business-db-data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    networks:
+      - db-network
+
+volumes:
+  auth-db-data:
+  business-db-data:
