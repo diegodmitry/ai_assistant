@@ -26,8 +26,6 @@ services:
       - business-db-data:/var/lib/postgresql/data
     ports:
       - "5433:5432"
-    networks:
-      - db-network
 
 volumes:
   auth-db-data:
